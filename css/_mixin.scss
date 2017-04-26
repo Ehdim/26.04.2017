@@ -1,0 +1,31 @@
+$backgroundBlue:#18afd3;
+$backgroundOrange:#f57e57;
+$fontOswald: 'Oswald', sans-serif;
+$fontLato: 'Lato', sans-serif; 
+$center:center; 
+
+@mixin properties($line-height,$fontSize,$color){
+  line-height:$line-height;
+  font-size: $fontSize;
+  color:$color;
+}
+
+@mixin flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin distance($height,$borderRadius,$background){
+  height: $height;
+  border-radius:$borderRadius;
+  background: $background;
+}
+@mixin pTag($font_argument: "Arial"){
+    font-size: 15px;
+    line-height: 1.6;
+    color: #868686;
+    font-family: $font_argument;
+}
+
+
+
